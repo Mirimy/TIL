@@ -1,0 +1,24 @@
+
+<style>
+  #ssafy > p:nth-child(2) {
+    color: red;
+  }
+  #ssafy > p:nth-of-type(2) {
+    color: blue;
+  }
+  p:hover {
+    user-select: none;
+    cursor: pointer;
+    color: orange
+  }
+</style>
+<!-- nth-child(2) : #ssafy가 가지고 있는 모든 자식들 중에 2번쨰를 선택한다-->
+<!-- nth-of-type(2) : #ssafy의 자식들 중에 타입이 p태그인 애들중에 2번째-->
+
+<div id="ssafy">
+  <h2>어떻게 선택 될까?</h2>
+  <p>첫번째 단락</p>
+  <p>두번째 단락</p>
+  <p>세번째 단락</p>
+  <p>네번째 단락</p>
+</div>
