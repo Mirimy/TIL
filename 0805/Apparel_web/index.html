@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>APPAREL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  
+</head>
+<style>
+  .box {
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+  }
+</style>
+
+<body>
+  <!-- 내비게이션 바 -->
+  <nav class="navbar navbar-expand-lg bg-white">
+    <div class="d-flex container-fluid justify-content-between">
+      <a class="navbar-brand" href="index.html">APPAREL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <ul class="navbar-nav pe-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
+      </ul>
+    </div>
+  </nav>
+  <!-- apparel 이미지 배너 -->
+  <div class="box mb-5">
+    <img src="assets/apparel.jpeg" class="w-100" alt="...">
+  </div>
+
+
+  <!-- About Our Company 레이아웃-->
+  <section class="d-flex justify-content-center mb-5">
+    <div style="width: 60%" class="d-flex">
+      <section class="d-flex justify-content-center">
+        <img class="mx-3" style="width: 40%" src="assets/apparel2.jpeg">
+        <article class="mx-3" style="width: 50%">
+          <h3 class="text-center" style="font-family: cursive;">About Our Company</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, doloremque adipisci. Odit magni debitis
+            corporis amet, aliquid nostrum quibusdam perferendis eius architecto unde ullam, facilis nobis temporibus
+            veniam maiores a?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maxime dignissimos, maiores quasi, earum
+            incidunt porro numquam blanditiis rerum reprehenderit reiciendis ullam assumenda neque distinctio at ex harum
+            iste. Accusantium.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Us-->
+  <section class="d-flex justify-content-center mb-5">
+    <div style="width: 60%" class="d-flex flex-column">
+      <h3 class="text-center my-4" style="font-family: cursive;">Contact Us</h3>
+      <section class="d-flex justify-content-around">
+
+        <form class="border border-dark px-4 py-2" style="width: 50%">
+          <div class="mb-2">
+            <label for="Username" class="form-label text-muted">Username</label>
+            <input type="text" class="form-control" id="Username">
+          </div>
+          <div class="mb-4">
+            <label for="Emailaddress" class="form-label text-muted">Email</label>
+            <input type="email" class="form-control" id="Emailaddress" aria-describedby="emailHelp">
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-outline-dark mb-2">Submit</button>
+          </div>
+        </form>
+
+        <img class="mx-3" style="width: 30%" src="assets/contact.jpg">
+      </div>
+    </section>  
+
+  </section>
+
+  <!-- More 영역 -->
+  <section class="d-flex justify-content-center mb-5">
+    <div style="width: 60%" class="d-flex flex-column">
+      <h3 class="text-center my-4" style="font-family: cursive;">More</h3>
+      <section class="d-flex justify-content-around">
+        <div class="d-flex flex-column text-center" style="width: 20%">
+          <img class="mx-auto mb-1" style="width: 30%" src="assets/email.png">
+          <p class="me-0 mb-1">Email Address</p>
+          <p class="me-0">aaaa@google.com</p>
+        </div>
+        <div class="d-flex flex-column text-center" style="width: 20%">
+          <img class="mx-auto mb-1" style="width: 30%" src="assets/telephone.png">
+          <p class="me-0 mb-1">Phone Number</p>
+          <p class="me-0">010-1234-5678</p>
+        </div>
+        <div class="d-flex flex-column text-center" style="width: 20%">
+          <img class="mx-auto mb-1" style="width: 30%" src="assets/location.png">
+          <p class="me-0 mb-1">Location</p>
+          <p class="me-0">부산광역시 OO동</p>
+        </div>
+        <div class="d-flex flex-column text-center" style="width: 20%">
+          <img class="mx-auto mb-1" style="width: 30%" src="assets/clock.png">
+          <p class="me-0 mb-1">Working Hours</p>
+          <p class="me-0">9am ~ 6pm</p>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- 푸터 영역 -->
+  <section class="d-flex justify-content-center">
+    <div style="width: 60%">
+      <hr>
+      <p class="text-center">ⓒ Copyright 2022 By Mirim | All Rights Reserved</p>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
