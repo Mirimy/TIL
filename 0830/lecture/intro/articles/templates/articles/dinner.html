@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{# extends 태그 무조건 line 1에 하삼 base.html 은 현재 폴더 경로에서 #}
+{# extends 로 base.html의 공통된 템플릿(css?) 가져오고, 현재 파일에서만 다르게 하고싶은 부분은 block, endblock 사용 #}
+{% block content %}
+<h1>오늘의 저녁메뉴</h1>
+<p>메뉴 목록은 {{ dinner|join:", " }}입니다.</p>
+<p>추천 메뉴는 {{ pick }}입니다.</p>
+<hr>
+
+<p>메뉴판</p>
+<ul>
+    {% for menu in dinner %}    <!-- 넘겨받은 변수 dinner 리스트에 대해 -->
+        <li>{{ menu }}</li>     <!-- 각 요소 menu들을 li로 출력 -->
+    {% endfor %}                <!-- 끝내는 태그 필수-->
+</ul>
+
+{% for money in wallet %}       <!-- 빈 리스트를 출력했을 때-->
+    <p>{{ money }}</p>
+{% empty %}                     <!-- 리스트 비었다면 ? -->
+    <p>돈이 없어요....</p>       <!-- 출력할 내용 -->
+{% endfor %}
+
+<p>
+    {% lorem %}         <!-- 로렘도 짧게 쓸 수 있음 ( lorem 5 w random / lorem 2 p )-->
+</p>
+
+<p>첫번째 저녁 메뉴는 {{ dinner.0 }}</p>    <!-- 인덱스 [0] 접근 (잘 안씀)-->
+
+<ul>
+    {% for menu in dinner %}
+        {% if forloop.first %}              <!-- for문의 first loop에 대해 -->
+            <li>{{ menu }} 는 첫번째</li>
+        {% else %}
+            <li>{{ menu }}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endblock content %}

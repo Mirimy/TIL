@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>안녕하세요. {{ name }} 님!</h1>
+    <p>오늘 점심 메뉴 목록은 {{ foods|join:", " }}입니다.</p>
+{% endblock content %}
