@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>NEW</h1>
+    <form action="{% url 'articles:update' article.pk %}" method="POST">
+        {% csrf_token %}
+        <label for="title">TITLE : </label>
+        <input type="text" name="title" id="title" value="{{ article.title }}"><br>
+        <label for="content">CONTENT : </label>
+        <input type="text" name="content" id="content" style="width:200px; height:200px;" value="{{ article.content }}"><br>
+        <input type="submit" value="EDIT">
+    </form>
+    <a href="{% url 'articles:index' %}">BACK</a>
+{% endblock content %}
